@@ -15,7 +15,13 @@ type AppStore = {
 const getRandId = () => Math.random().toString(36).substring(7);
 
 export const useAppStore = create<AppStore>((set) => ({
-  todoList: [],
+  todoList: [
+    {
+      id: getRandId(),
+      name: "Todo 1",
+      done: true,
+    },
+  ],
   addTodo: (todo) =>
     set((state) => ({
       todoList: [

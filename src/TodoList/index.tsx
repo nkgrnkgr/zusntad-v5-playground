@@ -15,7 +15,11 @@ export function TodoList() {
           <Item key={id} id={id} />
         ))}
       </ul>
-      <div>
+      <div
+        style={{
+          marginLeft: "40px",
+        }}
+      >
         <AddButton />
       </div>
     </div>
