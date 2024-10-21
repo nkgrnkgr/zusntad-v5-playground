@@ -2,6 +2,7 @@ import { useShallow } from "zustand/shallow";
 import { useAppStore } from "../store";
 import { AddButton } from "./AddButton";
 import { Item } from "./Item";
+import { SearchKeyword } from "./SearchKeyword";
 
 export function TodoList() {
   const ids = useAppStore(
@@ -10,6 +11,13 @@ export function TodoList() {
 
   return (
     <div>
+      <div
+        style={{
+          marginLeft: "40px",
+        }}
+      >
+        <SearchKeyword />
+      </div>
       <ul>
         {ids.map((id) => (
           <Item key={id} id={id} />

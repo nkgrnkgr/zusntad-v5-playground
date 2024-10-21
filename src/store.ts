@@ -10,11 +10,15 @@ type AppStore = {
   todoList: Todo[];
   toggleStatus: (id: string) => void;
   addTodo: (todo?: Todo) => void;
+  searchText: string;
+  updateSearchText: (text: string) => void;
 };
 
 const getRandId = () => Math.random().toString(36).substring(7);
 
 export const useAppStore = create<AppStore>((set) => ({
+  searchText: "",
+  updateSearchText: (text) => set({ searchText: text }),
   todoList: [
     {
       id: getRandId(),
