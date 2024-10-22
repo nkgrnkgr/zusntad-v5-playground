@@ -3,7 +3,7 @@ import { Item } from "./Item";
 import { SearchKeyword } from "./SearchKeyword";
 
 export function TodoList() {
-  // TODO store　の中から name に searchKeyword が含まれるものだけ表示する Selector を作成してください
+  // TODO state.todoList　の中から name に searchKeyword が含まれるものだけ表示する Selector を作成してください
   // [参考]
   // - https://kakehashi-dev.hatenablog.com/entry/2024/10/20/185225
   // - https://github.com/reduxjs/reselect
