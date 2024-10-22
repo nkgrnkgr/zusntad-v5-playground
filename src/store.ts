@@ -6,7 +6,7 @@ type Todo = {
   done: boolean;
 };
 
-type AppStore = {
+export type AppStore = {
   todoList: Todo[];
   toggleStatus: (id: string) => void;
   addTodo: (todo?: Todo) => void;
