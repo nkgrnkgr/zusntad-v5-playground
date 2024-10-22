@@ -1,13 +1,10 @@
-import { useShallow } from "zustand/shallow";
-import { useAppStore } from "../store";
 import { AddButton } from "./AddButton";
 import { Item } from "./Item";
 import { SearchKeyword } from "./SearchKeyword";
 
 export function TodoList() {
-  const ids = useAppStore(
-    useShallow((state) => state.todoList.map((todo) => todo.id)),
-  );
+  // TODO store　の中から name に searchKeyword が含まれるものだけ表示する Selector を作成してください
+  const ids = ["1"];
 
   return (
     <div>
