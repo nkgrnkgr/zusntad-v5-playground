@@ -1,10 +1,8 @@
 import { useAppStore } from "../store";
 
 export function SearchKeyword() {
-  const [searchText, updateSearchText] = useAppStore((state) => [
-    state.searchText,
-    state.updateSearchText,
-  ]);
+  const searchText = useAppStore((state) => state.searchText);
+  const updateSearchText = useAppStore((state) => state.updateSearchText);
 
   return (
     <input
