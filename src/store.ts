@@ -25,6 +25,51 @@ export const useAppStore = create<AppStore>((set) => ({
       name: "Todo 1",
       done: true,
     },
+    {
+      id: getRandId(),
+      name: "Todo 2",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 3",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 4",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 5",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 6",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 7",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 8",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 9",
+      done: true,
+    },
+    {
+      id: getRandId(),
+      name: "Todo 10",
+      done: true,
+    },
   ],
   addTodo: (todo) =>
     set((state) => ({
