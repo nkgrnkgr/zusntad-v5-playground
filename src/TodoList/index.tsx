@@ -1,4 +1,3 @@
-import { createSelector } from "reselect";
 import { type AppStore, useAppStore } from "../store";
 import { AddButton } from "./AddButton";
 import { Item } from "./Item";
@@ -9,18 +8,7 @@ import { SearchKeyword } from "./SearchKeyword";
 // [参考]
 // - https://kakehashi-dev.hatenablog.com/entry/2024/10/20/185225
 // - https://github.com/reduxjs/reselect
-const selectFilteredTodoListIds = createSelector(
-  [(state: AppStore) => state.todoList, (state: AppStore) => state.searchText],
-  (todoList, searchText) => {
-    if (searchText === "") {
-      return todoList.map((todo) => todo.id);
-    }
-
-    return todoList
-      .filter((todo) => todo.name.includes(searchText))
-      .map((todo) => todo.id);
-  },
-);
+const selectFilteredTodoListIds = (state: AppStore) => ["1"];
 
 export function TodoList() {
   const ids = useAppStore(selectFilteredTodoListIds);
