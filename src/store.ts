@@ -23,7 +23,7 @@ export const useAppStore = create<AppStore>((set) => ({
     {
       id: getRandId(),
       name: "Todo 1",
-      done: true,
+      done: false,
     },
     {
       id: getRandId(),
@@ -33,7 +33,7 @@ export const useAppStore = create<AppStore>((set) => ({
     {
       id: getRandId(),
       name: "Todo 3",
-      done: true,
+      done: false,
     },
     {
       id: getRandId(),
@@ -43,7 +43,7 @@ export const useAppStore = create<AppStore>((set) => ({
     {
       id: getRandId(),
       name: "Todo 5",
-      done: true,
+      done: false,
     },
     {
       id: getRandId(),
@@ -53,7 +53,7 @@ export const useAppStore = create<AppStore>((set) => ({
     {
       id: getRandId(),
       name: "Todo 7",
-      done: true,
+      done: false,
     },
     {
       id: getRandId(),
@@ -63,7 +63,7 @@ export const useAppStore = create<AppStore>((set) => ({
     {
       id: getRandId(),
       name: "Todo 9",
-      done: true,
+      done: false,
     },
     {
       id: getRandId(),
