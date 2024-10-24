@@ -8,10 +8,10 @@ import { SearchKeyword } from "./SearchKeyword";
 // [参考]
 // - https://kakehashi-dev.hatenablog.com/entry/2024/10/20/185225
 // - https://github.com/reduxjs/reselect
-const selectFilteredTodoListIds = (state: AppStore) => ["1"];
+const selectFilteredTodoListIds = (state: AppStore) => {};
 
 export function TodoList() {
-  const ids = useAppStore(selectFilteredTodoListIds);
+  const ids = ["1"];
 
   return (
     <div>
